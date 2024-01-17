@@ -1,0 +1,17 @@
+﻿@model List<Speciality>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Select an option:</label>
+        <select id="specialities-list">
+            <option value="">All</option>
+            @foreach (var speciality in Model) {
+                <option value="">@speciality.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>

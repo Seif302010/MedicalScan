@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MedicalScan</title><link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="~/css/theme/MedicalScanWebSite.styles.css"asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="~/css/css.css" rel="stylesheet">
+    <link href="~/css/css2.css" rel="stylesheet">
+    @* <link rel="stylesheet" href="~/MedicalScan.styles.css" asp-append-version="true" /> *@
+</head>
+<body>
+    @* <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MedicalScan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> *@
+
+        <header b-ge2kwu6o28="">
+            <div b-ge2kwu6o28="" id="intro-example-header" class="position-relative text-center bg-image">
+                <nav b-ge2kwu6o28="" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow position-relative">
+                    <div b-ge2kwu6o28="" class="container-fluid">
+                        <a class="navbar-brand" href="https://www.medicalscan.hu/"><img src="~/images/medicalscan_logo_transparent_100.png"></a>
+                        <button b-ge2kwu6o28="" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span b-ge2kwu6o28="" class="navbar-toggler-icon"></span>
+                        </button>
+                        <div b-ge2kwu6o28="" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul b-ge2kwu6o28="" class="navbar-nav flex-grow-1">
+                                    <li b-ge2kwu6o28="" class="nav-item">
+                                        <a class="nav-link" href="https://www.medicalscan.hu/">
+                                            <span b-ge2kwu6o28="" class="d-inline-block"><svg b-ge2kwu6o28="" class="svg-inline--fa fa-house" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path></svg><!-- <i b-ge2kwu6o28="" class="fa-solid fa-house"></i> Font Awesome fontawesome.com --></span><span b-ge2kwu6o28="" class="d-inline-block">&nbsp;Homepage</span>
+                                        </a>
+                                    </li>
+                                    <li b-ge2kwu6o28="" class="nav-item">
+                                    <a class="nav-link" href="https://www.medicalscan.hu/Solutions"><svg b-ge2kwu6o28="" class="svg-inline--fa fa-lightbulb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"></path></svg><!-- <i b-ge2kwu6o28="" class="fa-solid fa-lightbulb"></i> Font Awesome fontawesome.com -->&nbsp;Our solutions</a>
+                                    </li>
+                                    <li b-ge2kwu6o28="" class="nav-item">
+                                    <a class="nav-link" href="https://www.medicalscan.hu/Home/References"><svg b-ge2kwu6o28="" class="svg-inline--fa fa-circle-check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path></svg><!-- <i b-ge2kwu6o28="" class="fa-solid fa-circle-check"></i> Font Awesome fontawesome.com -->&nbsp;References</a>
+                                    </li>
+                                        <li b-ge2kwu6o28="" class="nav-item">
+                                            <a class="nav-link" href="https://www.medicalscan.hu/HCP"><svg b-ge2kwu6o28="" class="svg-inline--fa fa-user-doctor" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-doctor" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg><!-- <i b-ge2kwu6o28="" class="fa-solid fa-user-doctor"></i> Font Awesome fontawesome.com -->&nbsp;Medical&nbsp;sites</a>
+                                        </li>
+                                      <li b-ge2kwu6o28="" class="nav-item">
+                                          <a b-ge2kwu6o28="" class="nav-link" href="http://www.inhealvisegrad.eu/" target="_blank"><svg b-ge2kwu6o28="" class="svg-inline--fa fa-users" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"></path></svg><!-- <i b-ge2kwu6o28="" class="fa-solid fa-users"></i> Font Awesome fontawesome.com -->&nbsp;Residential&nbsp;pages</a>
+                                        </li>
+                        </ul>
+                    
+<ul class="navbar-nav">
+    <li class="nav-item">
+            <a class="nav-link" href="https://www.medicalscan.hu/Identity/Account/Register"><svg class="svg-inline--fa fa-user" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path></svg><!-- <i class="fa-solid fa-user"></i> Font Awesome fontawesome.com -->&nbsp;Registration
+</a>
+    </li>
+    <li class="nav-item">
+            <a class="nav-link" href="https://www.medicalscan.hu/Identity/Account/Login"><svg class="svg-inline--fa fa-right-to-bracket" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="right-to-bracket" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg><!-- <i class="fa-solid fa-right-to-bracket"></i> Font Awesome fontawesome.com -->&nbsp;Login</a>
+    </li>
+</ul>
+
+
+
+
+                </div>
+            </div>
+        </nav>
+        
+    <div class="main-banner-mask position-absolute">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white pb-4">
+                <br>
+                        <div>
+                            <h1 class="mb-3 mt-5 display-1 fw-bolder">MedicalScan</h1>
+                            <h3 class="mb-2">Health is a value.</h3>
+                            <h3 class="mb-4">Join us to protect it together!</h3>
+                    <br>
+                        </div>
+                        <div>
+                            <a class="btn btn-outline-light btn-lg m-2 btn-header" href="#intro" role="button">Next</a>
+                               
+                        </div>
+                        <br>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/medicalscanbudapest/?locale=hu_HU" role="button">
+                            <svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com -->
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/medical_scan_hu/" role="button">
+                            <svg class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram"></i> Font Awesome fontawesome.com -->
+                        </a>
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #000" href="https://www.tiktok.com/@@medicalscankft" role="button">
+                            <svg class="svg-inline--fa fa-tiktok" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg><!-- <i class="fab fa-tiktok"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <video b-ge2kwu6o28="" class="position-absolute banner-video" playsinline="" autoplay="autoplay" muted="muted" loop="" __idm_id__="638977">
+            <source class="h-100" src="~/videos/banner.mp4" type="video/mp4">
+        </video>
+            </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - MedicalScan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+
+    <!-- Footer -->
+    <footer b-ge2kwu6o28="" class="text-center text-lg-start text-white mt-auto" style="background-color: #2A896C">
+        <!-- Grid container -->
+        <div b-ge2kwu6o28="" class="p-4 pb-0">
+            <!-- Section: Links -->
+            <section b-ge2kwu6o28="" class="">
+                <!--Grid row-->
+                <div b-ge2kwu6o28="" class="row d-flex justify-content-between">
+                    <!-- Grid column -->
+                    <div b-ge2kwu6o28="" class="col-md-2 col-lg-2 col-xl-2 text-center">
+                        <h6 b-ge2kwu6o28="" class="text-uppercase mb-4 font-weight-bold">
+                            MedicalScan Kft
+                        </h6>
+                        <p b-ge2kwu6o28="">
+                        </p>
+                    </div>
+                    <hr b-ge2kwu6o28="" class="w-100 clearfix d-md-none">
+                    <hr b-ge2kwu6o28="" class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <hr b-ge2kwu6o28="" class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div b-ge2kwu6o28="" class="col-md-3 col-lg-3 col-xl-3 text-center">
+                        <h6 b-ge2kwu6o28="" class="text-uppercase mb-4 font-weight-bold">Kapcsolat</h6>
+
+                        <p b-ge2kwu6o28=""><svg b-ge2kwu6o28="" class="svg-inline--fa fa-envelope mr-3" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg><!-- <i b-ge2kwu6o28="" class="fas fa-envelope mr-3"></i> Font Awesome fontawesome.com --> info@medicalscan.hu</p>
+                        <p b-ge2kwu6o28=""><svg b-ge2kwu6o28="" class="svg-inline--fa fa-phone mr-3" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg><!-- <i b-ge2kwu6o28="" class="fas fa-phone mr-3"></i> Font Awesome fontawesome.com --> +36 1 336 2108</p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div b-ge2kwu6o28="" class="col-md-2 col-lg-2 col-xl-2 text-center">
+                        <h6 b-ge2kwu6o28="" class="text-uppercase mb-4 font-weight-bold">Kövess minket</h6>
+
+                        <!-- Facebook -->
+                        <a b-ge2kwu6o28="" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/medicalscanbudapest/?locale=hu_HU" role="button">
+                            <svg b-ge2kwu6o28="" class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i b-ge2kwu6o28="" class="fab fa-facebook-f"></i> Font Awesome fontawesome.com -->
+                        </a>
+
+                        <!-- Twitter -->
+                        <a b-ge2kwu6o28="" class="btn btn-primary btn-floating m-1" style="background-color: #000" href="https://www.tiktok.com/@@medicalscankft" role="button">
+                            <svg b-ge2kwu6o28="" class="svg-inline--fa fa-tiktok" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg><!-- <i b-ge2kwu6o28="" class="fab fa-tiktok"></i> Font Awesome fontawesome.com -->
+                        </a>
+
+                        <!-- Instagram -->
+                        <a b-ge2kwu6o28="" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/medical_scan_hu/" role="button">
+                            <svg b-ge2kwu6o28="" class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i b-ge2kwu6o28="" class="fab fa-instagram"></i> Font Awesome fontawesome.com -->
+                        </a>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div b-ge2kwu6o28="" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <a class="text-white" href="https://www.medicalscan.hu/adatvedelem/aff.pdf" target="_blank">© 2023 MedicalScanWebsite</a>
+            <br b-ge2kwu6o28="">
+            <a class="text-white" href="https://www.medicalscan.hu/adatvedelem/adatkezelesi_tajekoztato_2023.pdf" target="_blank">Adatkezelési tájékoztató egészségügyi szakemberek számára</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/theme/all.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
