@@ -1,17 +1,18 @@
-﻿@model List<Speciality>
+﻿@model Tuple<List<Speciality>, List<Doctor>>
 @{
     ViewData["Title"] = "Home Page";
 }
-
-<form method="post">
-    <div class="form-group">
-        <label>Select an option:</label>
+        <label>Speciality:</label>
         <select id="specialities-list">
             <option value="">All</option>
-            @foreach (var speciality in Model) {
+            @foreach (var speciality in Model.Item1) {
                 <option value="">@speciality.Name</option>
             }
         </select>
-    </div>
-    <button type="submit">Submit</button>
-</form>
+        @foreach (var doctor in Model.Item2){
+            <div> 
+                <h1>@doctor.Name</h1> 
+                
+            </div>
+        }
+

@@ -16,8 +16,10 @@ private readonly AppDbContext _context;
 
     public IActionResult Index()
     {
-        var specialities = _context.Specialities.ToList();
-        return View(specialities);
+        var specialities = _context.Specialities.OrderBy(d => d.Id).ToList();
+        var doctors = _context.Doctors.OrderBy(d => d.Id).ToList();
+        var model = new Tuple<List<Speciality>, List<Doctor>>(specialities, doctors);
+        return View(model);
     }
 
     public IActionResult Privacy()
