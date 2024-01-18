@@ -1,4 +1,4 @@
-This is an ASP.NET Core MVC (.net 6.0) project with Microsoft SOL Server Database.
+This is an ASP.NET Core MVC (.net 6.0) project with Microsoft SQL Server Database.
 
 To be able to run it create the database using the queries in the [CreationQuerry.sql](https://github.com/Seif302010/MedicalScan/blob/main/DataBaseSetup/CreationQuerry.sql) file in the [DataBaseSetup](https://github.com/Seif302010/MedicalScan/tree/main/DataBaseSetup) folder.
 
