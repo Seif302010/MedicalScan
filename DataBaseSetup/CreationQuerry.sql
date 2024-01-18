@@ -1,4 +1,11 @@
-﻿create table doctors (
+﻿CREATE DATABASE medical_scan
+  ON 
+  (NAME = YourDataFileName, FILENAME = 'D:\dotnet_projects\DataBases\medical_scanmedical_scan.mdf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
+  LOG ON 
+  (NAME = YourLogFileName, FILENAME = 'D:\dotnet_projects\DataBases\medical_scanmedical_scan.ldf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 5MB);
+
+use medical_scan
+create table doctors (
 	ID int primary key IDENTITY(1,1),
 	[Name] varchar(50) unique NOT NULL
 )
@@ -41,5 +48,7 @@ INSERT INTO doctors_specialities (DoctorID, SpecialityID) VALUES
 (5, 2),
 (5, 5);
 
+--drop table doctors_specialities
 --drop table specialties
 --drop table doctors
+--drop database medical_scan

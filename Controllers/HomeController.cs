@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MedicalScan.Models;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 
 namespace MedicalScan.Controllers;
