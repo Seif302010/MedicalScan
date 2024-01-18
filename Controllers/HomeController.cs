@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MedicalScan.Models;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 
 namespace MedicalScan.Controllers;
 
@@ -17,7 +18,11 @@ private readonly AppDbContext _context;
     public IActionResult Index()
     {
         var specialities = _context.Specialities.OrderBy(d => d.Id).ToList();
-        var doctors = _context.Doctors.OrderBy(d => d.Id).ToList();
+        var doctors = _context.Doctors.Select(d => new Doctor {
+            Id = d.Id,
+            Name = d.Name,
+            Specialities = d.Specialities.ToList()
+        } ).OrderBy(d => d.Id).ToList();
         var model = new Tuple<List<Speciality>, List<Doctor>>(specialities, doctors);
         return View(model);
     }

@@ -1,0 +1,24 @@
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.doctor-box {
+    border: 1px solid black;
+    min-height: 250px;
+    width: 260px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.doctor-box h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.doctor-box h6 {
+    margin-left: 25px;
+}

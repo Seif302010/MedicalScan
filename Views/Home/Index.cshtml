@@ -2,17 +2,27 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<link href="~/css/homeIndex.css" rel="stylesheet">
+<h1>Doctors</h1>
+<section style="text-align: center;">
+    <div style="margin-bottom: 10px;">
         <label>Speciality:</label>
-        <select id="specialities-list">
-            <option value="">All</option>
+        <select id="specialities-menu">
+            <option value="All">All</option>
             @foreach (var speciality in Model.Item1) {
-                <option value="">@speciality.Name</option>
+                <option value="@speciality.Name">@speciality.Name</option>
             }
         </select>
+    </div>
+    <div class="doctor-container">
         @foreach (var doctor in Model.Item2){
-            <div> 
-                <h1>@doctor.Name</h1> 
-                
+            <div class="doctor-box"> 
+                <h4 style="" >@doctor.Name</h4>
+                @foreach (var speciality in doctor.Specialities){
+                    <h6> @speciality.Name </h6>
+                }
             </div>
         }
+    </div>
 
+</section>
