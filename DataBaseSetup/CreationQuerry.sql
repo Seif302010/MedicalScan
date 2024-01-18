@@ -1,8 +1,8 @@
 ﻿CREATE DATABASE medical_scan
   ON 
-  (NAME = YourDataFileName, FILENAME = 'D:\dotnet_projects\DataBases\medical_scanmedical_scan.mdf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
+  (NAME = YourDataFileName, FILENAME = 'C:\medical_scanmedical_scan.mdf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
   LOG ON 
-  (NAME = YourLogFileName, FILENAME = 'D:\dotnet_projects\DataBases\medical_scanmedical_scan.ldf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 5MB);
+  (NAME = YourLogFileName, FILENAME = 'C:\medical_scanmedical_scan.ldf', SIZE = 8MB, MAXSIZE = UNLIMITED, FILEGROWTH = 5MB);
 
 use medical_scan
 create table doctors (
